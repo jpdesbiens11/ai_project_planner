@@ -1,0 +1,128 @@
+Résumé,Type de ticket,Description,Priorité,Étiquettes,Nom de l'epic,Lien Epic,Personne assignée,Estimation originale
+Développement Moteur Électrique Automobile,Epic,"Développement complet d'un moteur électrique pour application automobile, des requirements jusqu'à la validation du prototype.",Medium,moteur-electrique automobile prototype,,,,6m
+Phase 1 - Requirements,Epic,Définition complète des spécifications et requirements du moteur électrique.,High,requirements,,Développement Moteur Électrique Automobile,,3w
+Définir specs de performance,Tâche,"- Puissance nominale et puissance crête
+- Couple nominal et couple max
+- Plage de vitesse (RPM min-max)
+- Rendement cible (% à différents points)",High,requirements performance,,Phase 1 - Requirements,jpdesbiens11@gmail.com,3d
+Définir contraintes physiques,Tâche,"- Dimensions maximales (enveloppe)
+- Masse maximale
+- Interfaces mécaniques (montage, arbre de sortie)",Medium,requirements mecanique,,Phase 1 - Requirements,jpdesbiens11@gmail.com,2d
+Définir requirements environnementaux,Tâche,"- Plage de température d'opération
+- Protection IP (poussière/eau)
+- Vibrations et chocs
+- Compatibilité électromagnétique (EMC)",Medium,requirements environnement,,Phase 1 - Requirements,jpdesbiens11@gmail.com,2d
+Définir specs électriques et thermiques,Tâche,"- Tension de bus DC
+- Courant max
+- Type de contrôle (FOC, DTC, etc.)
+- Type de refroidissement
+- Température max des composants",High,requirements electrique thermique,,Phase 1 - Requirements,jpdesbiens11@gmail.com,3d
+Phase 2A - Simulation Électromagnétique,Epic,"Simulations électromagnétiques progressives du moteur, de 2D simple à 3D complexe avec validations POC.",Highest,emag simulation,,Développement Moteur Électrique Automobile,,10w
+Calculs analytiques préliminaires,Tâche,"- Dimensionnement de base (diamètre, longueur)
+- Calcul du nombre de pôles et encoches
+- Estimation des performances théoriques",Medium,emag analytique,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,3d
+Modèle 2D simplifié - géométrie de base,Tâche,"- Création géométrie 2D simplifiée
+- Maillage initial
+- Setup matériaux de base",Medium,emag simulation-2d,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,2d
+Simulation 2D - circuit magnétique à vide,Tâche,"- Analyse du flux à vide
+- Distribution des lignes de champ
+- Validation circuit magnétique",Medium,emag simulation-2d,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,2d
+Simulation 2D - flux et saturation locale,Tâche,"- Analyse de la saturation dans dents et culasse
+- Optimisation des sections
+- Carte de densité de flux",High,emag simulation-2d,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,3d
+POC #1 - Validation mesures sur maquette simple,Tâche,"- Fabrication maquette simplifiée (secteur de machine)
+- Mesures de flux avec gaussmètre
+- Corrélation avec simulations 2D",Highest,emag poc validation,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,1w
+Simulation 2D - forces et couple statique,Tâche,"- Calcul couple en fonction position rotor
+- Analyse des ondulations de couple
+- Forces radiales sur dents",High,emag simulation-2d,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,3d
+Simulation 2D - inductances et paramètres,Tâche,"- Calcul inductances d'axes (Ld, Lq)
+- Inductance de fuite
+- Variation avec la saturation",Medium,emag simulation-2d,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,2d
+Simulation 2D transitoire - forme d'onde Back-EMF,Tâche,"- Simulation temporelle en rotation
+- Analyse harmonique Back-EMF
+- THD et optimisation forme d'onde",High,emag simulation-2d transitoire,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,3d
+POC #2 - Validation Back-EMF sur prototype partiel,Tâche,"- Assemblage prototype partiel (1 phase)
+- Mesures Back-EMF en rotation
+- Validation formes d'onde et amplitudes",Highest,emag poc validation,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,1w
+Optimisation 2D - réduction ondulations couple,Tâche,"- Techniques de skewing
+- Optimisation forme aimants
+- Modification ouvertures encoches",Medium,emag simulation-2d optimisation,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,4d
+Simulation 2.5D - effets d'extrémités,Tâche,"- Modélisation des têtes de bobines
+- Inductances de fuites d'extrémité
+- Impact sur les performances",Medium,emag simulation-25d,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,3d
+Simulation 3D - fuites magnétiques,Tâche,"- Modèle 3D complet
+- Analyse fuites axiales
+- Pertes supplémentaires dans structure",High,emag simulation-3d,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,5d
+Simulation 3D - pertes AC dans conducteurs,Tâche,"- Effets de peau et proximité
+- Pertes AC à haute fréquence
+- Optimisation conducteurs",High,emag simulation-3d pertes,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,4d
+Corrélation finale simulations vs POCs,Tâche,"- Rapport de corrélation complet
+- Ajustement modèles si nécessaire
+- Validation approche simulation",High,emag validation rapport,,Phase 2A - Simulation Électromagnétique,jpdesbiens11@gmail.com,3d
+Phase 2B - Simulation Mécanique,Epic,Analyses mécaniques et structurelles du moteur.,High,mecanique simulation,,Développement Moteur Électrique Automobile,,4w
+Analyse modale - fréquences propres,Tâche,"- Calcul modes propres stator/rotor
+- Identification fréquences critiques
+- Recommandations design",Medium,mecanique simulation vibration,,Phase 2B - Simulation Mécanique,jpdesbiens11@gmail.com,3d
+Simulation contraintes mécaniques rotor,Tâche,"- Contraintes centrifuges vitesse max
+- Tenue des aimants
+- Facteur de sécurité",High,mecanique simulation rotor,,Phase 2B - Simulation Mécanique,jpdesbiens11@gmail.com,3d
+Analyse fatigue - cycles thermiques,Tâche,"- Dilatations différentielles
+- Contraintes thermiques cycliques
+- Durée de vie estimée",Medium,mecanique thermique fatigue,,Phase 2B - Simulation Mécanique,jpdesbiens11@gmail.com,4d
+Simulation vibrations et bruit (NVH),Tâche,"- Forces magnétiques sur structure
+- Réponse vibratoire
+- Estimation niveau sonore",Medium,mecanique nvh simulation,,Phase 2B - Simulation Mécanique,jpdesbiens11@gmail.com,5d
+Phase 3 - Design Géométrique,Epic,Conception détaillée de tous les composants du moteur.,High,design,,Développement Moteur Électrique Automobile,,5w
+Design détaillé stator,Tâche,"- Plans détaillés encoches et dents
+- Spécification bobinage
+- Design isolation électrique
+- Conception carcasse",High,design stator mecanique,,Phase 3 - Design Géométrique,jpdesbiens11@gmail.com,1w
+Design détaillé rotor,Tâche,"- Positionnement final aimants
+- Design tôles et découpes
+- Conception arbre et clavette
+- Plan équilibrage",High,design rotor mecanique,,Phase 3 - Design Géométrique,jpdesbiens11@gmail.com,1w
+Design système refroidissement,Tâche,"- Tracé canaux refroidissement
+- Sélection joints et matériaux
+- Interfaces hydrauliques
+- Calculs débit/pression",Medium,design thermique refroidissement,,Phase 3 - Design Géométrique,jpdesbiens11@gmail.com,4d
+Documentation technique complète,Tâche,"- Plans 2D cotés complets
+- Modèles 3D assemblage
+- BOM détaillée avec fournisseurs
+- Procédures assemblage",Medium,design documentation,,Phase 3 - Design Géométrique,jpdesbiens11@gmail.com,1w
+Phase 4 - Prototype,Epic,Fabrication et assemblage du prototype moteur.,High,prototype,,Développement Moteur Électrique Automobile,,8w
+Approvisionnement composants,Tâche,"- Commande tôles magnétiques
+- Achat aimants (specs, grades)
+- Fils cuivre et isolation
+- Composants mécaniques standards",High,prototype approvisionnement,,Phase 4 - Prototype,jpdesbiens11@gmail.com,2w
+Fabrication pièces mécaniques,Tâche,"- Découpe laser tôles
+- Usinage arbre
+- Usinage carcasse et flasques
+- Traitement surface si requis",High,prototype fabrication mecanique,,Phase 4 - Prototype,jpdesbiens11@gmail.com,2w
+Bobinage et imprégnation,Tâche,"- Insertion isolants encoche
+- Bobinage selon schéma
+- Connexions et brasures
+- Imprégnation vernis et cuisson",High,prototype bobinage electrique,,Phase 4 - Prototype,jpdesbiens11@gmail.com,1w
+Assemblage et contrôle qualité,Tâche,"- Empilage et collage tôles
+- Insertion aimants avec gabarit
+- Montage final rotor/stator
+- Tests isolation et continuité
+- Vérification entrefer et concentricité",Highest,prototype assemblage qualite,,Phase 4 - Prototype,jpdesbiens11@gmail.com,1w
+Phase 5 - Validation,Epic,Tests complets et validation du prototype selon requirements.,Highest,validation,,Développement Moteur Électrique Automobile,,5w
+Tests électriques de base,Tâche,"- Mesure résistances phases
+- Mesure inductances Ld/Lq
+- Test isolation haute tension
+- Mesure et validation Kt",High,validation test electrique,,Phase 5 - Validation,jpdesbiens11@gmail.com,2d
+Tests de performance sur banc,Tâche,"- Courbe couple-vitesse complète
+- Cartographie rendement
+- Mesures températures en régime
+- Tests surcharge temporaire",Highest,validation test performance,,Phase 5 - Validation,jpdesbiens11@gmail.com,1w
+Tests thermiques et endurance,Tâche,"- Cycles thermiques (-40°C à +150°C)
+- Test endurance 500h
+- Vibrations selon norme auto
+- Test étanchéité IP67",Highest,validation test endurance,,Phase 5 - Validation,jpdesbiens11@gmail.com,3w
+Rapport final et recommandations,Tâche,"- Compilation tous résultats tests
+- Comparaison vs requirements
+- Analyse écarts et root cause
+- Recommandations pour V2
+- Go/No-go industrialisation",High,validation rapport documentation,,Phase 5 - Validation,jpdesbiens11@gmail.com,3d

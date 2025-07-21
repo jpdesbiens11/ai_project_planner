@@ -1,0 +1,6 @@
+title,description,type,status,priority,estimated_hours,assignee,parent
+Create a Python script for sorting a list of tuples based on the first element,,Script,To Do,H,0.0,,
+Design a web application using Django and Vue.js for managing restaurant orders,,Project Management,In Progress,Low,0.0,,
+TITRE COURT,,Epic,À faire,Moyenne,0.0,Non assigné,
+TITRE COURT 2,,Story,À faire,Moyenne,0.0,Non assigné,
+TITRE COURT 3,,Sous-tâche,À faire,Moyenne,0.0,Non assigné,

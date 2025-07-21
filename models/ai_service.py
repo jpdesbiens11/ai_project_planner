@@ -1,10 +1,10 @@
-# models/ai_service.py
 import requests
 import json
 import logging
 import time
 import re
 import io
+import subprocess
 
 class AIService:
     """Service pour interagir avec l'API d'IA."""
@@ -288,6 +288,38 @@ Donne une réponse claire, concise et informative.
         except Exception as e:
             self.logger.error(f"Erreur lors de la réponse à la question: {str(e)}")
             raise
+    
+    def ask_question_with_csv(self, prompt, csv_path):
+        """Use Ollama CLI to ask a question with CSV file reference"""
+        try:
+            # Create a more detailed prompt
+            full_prompt = f"""
+J'ai un fichier CSV situé à: {csv_path}
+Ce fichier contient des données que je dois analyser.
+
+Question de l'utilisateur: {prompt}
+
+Analyse le fichier CSV et réponds à la question de manière détaillée.
+"""
+            
+            # Construct a command to run Ollama CLI
+            cmd = ["ollama", "run", self.model, full_prompt]
+            
+            # Run the command
+            self.logger.info(f"Exécution d'Ollama CLI avec le modèle {self.model}")
+            result = subprocess.run(cmd, capture_output=True, text=True)
+            
+            # Get the output
+            if result.returncode == 0:
+                self.logger.info("Réponse reçue avec succès d'Ollama CLI")
+                return result.stdout
+            else:
+                error_msg = f"Erreur lors de l'exécution d'Ollama CLI: {result.stderr}"
+                self.logger.error(error_msg)
+                return f"Erreur: {error_msg}"
+        except Exception as e:
+            self.logger.error(f"Exception lors de l'exécution d'Ollama CLI: {str(e)}")
+            return f"Erreur: {str(e)}"
     
     def _send_request(self, prompt):
         """Envoie une requête à l'API Ollama."""
