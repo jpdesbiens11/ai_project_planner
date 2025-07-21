@@ -1,0 +1,69 @@
+2025-07-18 14:54:02,267 - __main__ - INFO - Démarrage de l'application
+2025-07-18 14:54:02,267 - __main__ - INFO - Utilisation du fichier CSV: /home/jpdesbiens11/Documents/programmation_vs_code/AI_agent_project_planning/electric_motor_design.csv
+2025-07-18 14:54:02,267 - __main__ - INFO - Modèle d'IA sélectionné: llama3.2:3b
+2025-07-18 14:54:02,269 - models.ai_service - INFO - Service IA initialisé avec le modèle llama3.2:3b
+2025-07-20 11:35:34,295 - __main__ - INFO - Démarrage de l'application
+2025-07-20 11:35:34,296 - __main__ - INFO - Utilisation du fichier CSV: /home/jpdesbiens11/Documents/programmation_vs_code/AI_agent_project_planning/electric_motor_design.csv
+2025-07-20 11:35:34,296 - __main__ - INFO - Modèle d'IA sélectionné: llama3.2:3b
+2025-07-20 11:35:34,298 - models.ai_service - INFO - Service IA initialisé avec le modèle llama3.2:3b
+2025-07-20 11:37:54,115 - __main__ - INFO - Démarrage de l'application
+2025-07-20 11:37:54,116 - __main__ - INFO - Utilisation du fichier CSV: /home/jpdesbiens11/Documents/programmation_vs_code/AI_agent_project_planning/electric_motor_design.csv
+2025-07-20 11:37:54,116 - __main__ - INFO - Modèle d'IA sélectionné: llama3.2:3b
+2025-07-20 11:37:54,118 - models.ai_service - INFO - Service IA initialisé avec le modèle llama3.2:3b
+2025-07-20 11:39:07,641 - models.ai_service - ERROR - Erreur lors de la communication avec l'API Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)
+2025-07-20 13:14:08,467 - __main__ - INFO - Démarrage de l'application
+2025-07-20 13:14:18,704 - __main__ - INFO - Modèle sélectionné par l'utilisateur: llama3.2:3b
+2025-07-20 13:14:18,705 - __main__ - INFO - Utilisation du fichier CSV: /home/jpdesbiens11/Documents/programmation_vs_code/AI_agent_project_planning/jira_tasks.csv
+2025-07-20 13:14:18,705 - __main__ - INFO - Modèle d'IA utilisé: llama3.2:3b
+2025-07-20 13:14:18,773 - models.ai_service - INFO - Service IA initialisé avec le modèle llama3.2:3b
+2025-07-20 13:23:34,767 - __main__ - INFO - Démarrage de l'application
+2025-07-20 13:28:29,098 - __main__ - INFO - Modèle sélectionné par l'utilisateur: tinyllama:1.1b
+2025-07-20 13:28:29,098 - __main__ - INFO - Utilisation du fichier CSV: /home/jpdesbiens11/Documents/programmation_vs_code/AI_agent_project_planning/jira_tasks.csv
+2025-07-20 13:28:29,098 - __main__ - INFO - Modèle d'IA utilisé: tinyllama:1.1b
+2025-07-20 13:28:29,100 - models.ai_service - INFO - Service IA initialisé avec le modèle tinyllama:1.1b
+2025-07-20 13:31:25,677 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 13:31:25,677 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 13:31:47,306 - models.ai_service - INFO - Réponse reçue en 21.63 secondes
+2025-07-20 13:32:21,417 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 13:32:21,417 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 13:32:49,368 - models.ai_service - INFO - Réponse reçue en 27.95 secondes
+2025-07-20 13:36:05,188 - __main__ - INFO - Démarrage de l'application
+2025-07-20 13:36:08,456 - __main__ - INFO - Modèle sélectionné par l'utilisateur: tinyllama:1.1b
+2025-07-20 13:36:08,456 - __main__ - INFO - Utilisation du fichier CSV: /home/jpdesbiens11/Documents/programmation_vs_code/AI_agent_project_planning/electric_motor_design.csv
+2025-07-20 13:36:08,456 - __main__ - INFO - Modèle d'IA utilisé: tinyllama:1.1b
+2025-07-20 13:36:08,462 - models.ai_service - INFO - Service IA initialisé avec le modèle tinyllama:1.1b
+2025-07-20 13:36:21,824 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 13:36:21,825 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 13:36:31,556 - models.ai_service - INFO - Réponse reçue en 9.73 secondes
+2025-07-20 13:36:36,730 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 13:36:36,730 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 13:37:11,032 - models.ai_service - INFO - Réponse reçue en 34.30 secondes
+2025-07-20 13:45:21,608 - __main__ - INFO - Démarrage de l'application
+2025-07-20 13:45:24,934 - __main__ - INFO - Modèle sélectionné par l'utilisateur: tinyllama:1.1b
+2025-07-20 13:45:24,935 - __main__ - INFO - Utilisation du fichier CSV: /home/jpdesbiens11/Documents/programmation_vs_code/AI_agent_project_planning/jira_tasks.csv
+2025-07-20 13:45:24,935 - __main__ - INFO - Modèle d'IA utilisé: tinyllama:1.1b
+2025-07-20 13:56:33,002 - __main__ - INFO - Démarrage de l'application
+2025-07-20 13:56:36,148 - __main__ - INFO - Modèle sélectionné par l'utilisateur: tinyllama:1.1b
+2025-07-20 13:56:36,148 - __main__ - INFO - Utilisation du fichier CSV: /home/jpdesbiens11/Documents/programmation_vs_code/AI_agent_project_planning/jira_tasks.csv
+2025-07-20 13:56:36,149 - __main__ - INFO - Modèle d'IA utilisé: tinyllama:1.1b
+2025-07-20 13:56:46,301 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 13:56:46,301 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 13:56:54,276 - models.ai_service - INFO - Réponse reçue en 7.97 secondes
+2025-07-20 13:57:05,786 - __main__ - INFO - Démarrage de l'application
+2025-07-20 14:02:20,860 - __main__ - INFO - Modèle sélectionné par l'utilisateur: qwen2.5:3b
+2025-07-20 14:02:20,860 - __main__ - INFO - Utilisation du fichier CSV: /home/jpdesbiens11/Documents/programmation_vs_code/AI_agent_project_planning/jira_tasks.csv
+2025-07-20 14:02:20,860 - __main__ - INFO - Modèle d'IA utilisé: qwen2.5:3b
+2025-07-20 14:02:38,021 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 14:02:38,021 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 14:02:41,344 - models.ai_service - INFO - Réponse reçue en 3.32 secondes
+2025-07-20 14:03:28,493 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 14:03:28,493 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 14:03:35,937 - models.ai_service - INFO - Réponse reçue en 7.44 secondes
+2025-07-20 14:04:21,613 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 14:04:21,613 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 14:04:28,117 - models.ai_service - INFO - Réponse reçue en 6.50 secondes
+2025-07-20 14:05:12,693 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 14:05:12,694 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 14:06:49,791 - models.ai_service - INFO - Réponse reçue en 97.10 secondes
+2025-07-20 14:09:44,827 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 14:09:44,827 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate

@@ -1,0 +1,26 @@
+qwen2.5-coder:3b (numéro dans le menu)
+
+Taille: 3B paramètres
+RAM: 4-6 GB
+Spécialement optimisé pour la manipulation de données et structures
+Bonnes capacités d'analyse et de raisonnement
+Plus adapté à la manipulation de fichiers CSV que les modèles génériques
+
+
+phi3:3.8b (numéro dans le menu)
+
+Taille: 3.8B paramètres
+RAM: 4-6 GB
+Excellentes capacités de raisonnement pour sa taille
+Bonne performance sur les tâches de planification
+
+Combinaison Claude+AI local avec :
+Utiliser un modèle plus léger comme qwen2.5:1.5b pour les opérations de base sur le CSV
+
+Actuels :
+--------------------------------------------------
+Nom                       Tag             Taille         
+--------------------------------------------------
+tinyllama:1.1b            default         608.16 MB      
+qwen2.5-coder:7b          default         4.36 GB        
+llama3.2:3b               default         1.88 GB      

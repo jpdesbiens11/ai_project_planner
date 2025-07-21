@@ -1,0 +1,11 @@
+# Créer un fichier nommé Modelfile
+echo 'FROM qwen2.5-coder:7b
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+SYSTEM """Vous êtes un agent de planification de tâches expert. Votre rôle est d'aider à gérer un projet en manipulant des fichiers CSV/Excel de tâches. Vous pouvez ajouter, modifier, supprimer et réorganiser des tâches. Vous répondez de manière concise et privilégiez les solutions pratiques."""' > Modelfile
+
+# Créer un modèle personnalisé
+ollama create task-planner -f ./Modelfile
+
+# Exécuter le modèle personnalisé
+ollama run task-planner --keepalive 60m

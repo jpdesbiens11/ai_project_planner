@@ -1,0 +1,15 @@
+import requests
+import json
+
+def query_model(prompt):
+    response = requests.post('http://localhost:11434/api/generate',
+                           json={
+                               'model': 'qwen2.5-coder:7b',
+                               'prompt': prompt,
+                               'stream': False
+                           })
+    return response.json()['response']
+
+# Exemple d'utilisation
+result = query_model("Écris une fonction Python pour ajouter une nouvelle tâche à un fichier CSV de projet.")
+print(result)
