@@ -67,3 +67,23 @@
 2025-07-20 14:06:49,791 - models.ai_service - INFO - Réponse reçue en 97.10 secondes
 2025-07-20 14:09:44,827 - models.ai_service - INFO - Connexion à Ollama réussie
 2025-07-20 14:09:44,827 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 14:12:23,712 - models.ai_service - INFO - Réponse reçue en 158.89 secondes
+2025-07-20 14:12:23,712 - models.ai_service - ERROR - Erreur lors de la génération des tâches: the JSON object must be str, bytes or bytearray, not NoneType
+2025-07-20 14:23:03,929 - __main__ - INFO - Démarrage de l'application
+2025-07-20 14:23:08,186 - __main__ - INFO - Modèle sélectionné par l'utilisateur: tinyllama:1.1b
+2025-07-20 14:23:08,187 - __main__ - INFO - Utilisation du fichier CSV: /home/jpdesbiens11/Documents/programmation_vs_code/AI_agent_project_planning/jira_tasks.csv
+2025-07-20 14:23:08,187 - __main__ - INFO - Modèle d'IA utilisé: tinyllama:1.1b
+2025-07-20 14:23:25,970 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 14:23:25,970 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 14:23:38,467 - models.ai_service - INFO - Réponse reçue en 12.50 secondes
+2025-07-20 14:23:46,953 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 14:23:46,953 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 14:24:02,030 - models.ai_service - INFO - Réponse reçue en 15.08 secondes
+2025-07-20 14:24:59,488 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 14:24:59,489 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 14:25:21,886 - models.ai_service - INFO - Réponse reçue en 22.40 secondes
+2025-07-20 14:25:26,981 - models.ai_service - INFO - Connexion à Ollama réussie
+2025-07-20 14:25:26,981 - models.ai_service - INFO - Envoi d'une requête à http://localhost:11434/api/generate
+2025-07-20 14:25:51,379 - models.ai_service - INFO - Réponse reçue en 24.40 secondes
+2025-07-20 14:25:51,379 - models.ai_service - ERROR - Aucun JSON valide n'a été trouvé dans la réponse
+2025-07-20 14:25:51,379 - models.ai_service - INFO - Tentative de récupération avec un prompt plus simple...
